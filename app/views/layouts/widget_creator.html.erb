@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Widget Creator</title>
+  <%= stylesheet_link_tag "widget_creator" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="app-container">
+		<div id="header-bar">
+			<span class="header-bar-title">Widget Creator</span>
+		</div>
+		<%= yield %>
+	</div>
+</body>
+</html>

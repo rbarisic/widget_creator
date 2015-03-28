@@ -1,0 +1,18 @@
+<h1>All Widgets</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Actions</th>
+	</tr>
+	<tr>
+		<% @widgets.each do |widget| %>
+			<td><%= widget.name %></td>
+			<td><%= link_to "Show Widget", widget_show_path %>
+			<%= link_to "Create Widget" %>
+			<%= link_to "Delete Widget" %></td>
+		<% end %>
+	</tr>
+</table>
+
+<%= link_to 'Create new Widget', new_widget_path, class: 'pure-button' %>

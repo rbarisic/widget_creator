@@ -1,0 +1,114 @@
+@import "font-awesome";
+
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#app-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: crimson;
+}
+
+#app {
+	height: 100%;
+	width: 100%;
+}
+
+#header-bar {
+	color: #fff;
+	background: #006ecb;
+	border-bottom: 1px solid #4d9adb;
+}
+
+.header-bar-title {
+	display: inline-block;
+	padding: 0.5em;
+	font-size: 1.2em;
+}
+
+.window-toolbar {
+	color: #fff;
+	font-size: 0;
+	/*background: #2f4c65;*/
+	background-color: #454545;
+	/*background: linear-gradient(#5b5b5b,#454545);*/
+	i.fa {
+		height: 1em;
+		width: 1em;
+	}
+	ul {
+		font-size: 0;
+		display: inline-block;
+		list-style: none;
+		padding: 0 0.2rem;
+		margin: 0 0.2rem;
+		border-right: 1px solid #333;
+	}
+	ul li {
+		display: inline-block;
+		font-size: 1rem;
+		padding: 0;
+		margin: 0;
+	}
+	ul li a, ul li button, ul li span.title {
+		display: inline-block;
+		padding: 0.3em;
+		margin: 0.5em 0.2em;
+	}
+	ul li span.description {
+		color: #999;
+		padding: 0.3em;
+	}
+	ul li button {
+		color: #bbb;
+		background: none;
+		border: none;
+		outline: none;
+		border-radius: 4px;
+		&:hover {
+			color: #006ecb;
+			box-shadow: 0 0 0px 1px rgba(0,0,0,0.3);
+		}
+	}
+}
+
+#workspace {
+	height: 100%;
+	/*color: #fff;*/
+	/*background: #111;*/
+	background: #fff;
+}
+
+#widget-editor {
+
+	width: 75%;
+	padding: 1em;
+}
+
+.sidebar {
+	position: absolute;
+	right: 0;
+	width: 25%;
+	height: 100%;
+	background: #bfbfbf;
+}
+
+.sidebar-title {
+	color: #333;
+	background: #858585;
+	padding: 0.5em;
+	font-weight: 600;
+}
+
+.sidebar-content {
+	padding: 1em;
+}

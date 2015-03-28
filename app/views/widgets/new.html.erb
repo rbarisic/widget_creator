@@ -1,0 +1,34 @@
+<script>
+	a = document.getElementById('workspace');
+	a.
+</script>
+<div id="app">
+	<div class="window-toolbar">
+		<ul>
+			<li><span class="description">Data</span></li>
+			<li><%= icon_button "save", tooltip: "Save this widget." %></li>
+			<li><%= icon_button "undo", tooltip: "Undo last step." %></li>
+		</ul>
+		<ul>
+			<li><span class="description">Font</span></li>
+			<li><%= icon_button "bold", tooltip: "Bold font." %></li>
+			<li><%= icon_button "italic", tooltip: "Italic font." %></li>
+			<li><%= icon_button "underline", tooltip: "Underline text." %></li>
+		</ul>
+	</div>
+
+	<div id="workspace">
+		<div id="sidebar-components" class="sidebar">
+			<div class="sidebar-title">
+			<%= icon_button 'angle-double-right' %>
+			<span class="title">Components</span>
+			</div>
+			<div class="sidebar-content">
+			awd
+			</div>
+		</div>
+		<div id="widget-editor">
+			<%= render(partial: 'widget', widget: @widget) %>
+		</div>
+	</div>
+</div>
